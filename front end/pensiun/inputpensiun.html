@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Permohonan Pensiun</title>
+  <link rel="stylesheet" href="../css/inputpensiun.css"/>
+  <link rel="stylesheet" href="javascript/inputpensiun.js"/>
+
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo-center">
+        <a href="../../index.html" class="btn-zoom"><img src="../images/house-fill.svg" width="20px" class="zoom-hover"></a>
+      </div>
+
+
+      
+      
+        <div class="logo">E-Profile SIASN</div>
+    
+        <ul class="nav">
+          <li class="dropdown">
+            <div class="dropdown-toggle">PROFIL</div>
+            <ul class="sub-menu">
+              <li><a href="../profil/datadiri.html">
+              <li>Data Diri</li></a></li> 
+              <li>Data Keluarga</li>
+              <li>Riwayat Pendidikan</li>
+              <li>Riwayat Golongan</li>
+              <li>Riwayat Jabatan</li>
+              <li>Riwayat Diklat/Kursus</li>
+              <li>Riwayat SKP</li>
+              <li>Riwayat Penghargaan</li>
+            </ul>
+          </li>
+      
+          <li class="dropdown">
+            <div class="dropdown-toggle">Kenaikan Gaji Berkala</div>
+            <ul class="sub-menu">
+              <li>Permohonan KGB</li>
+              <li>Riwayat KGB</li>
+            </ul>
+          </li>
+      
+          <li class="dropdown">
+            <div class="dropdown-toggle">CUTI</div>
+            <ul class="sub-menu">
+              <li><img src="../images/pencil-square.svg" > Permohonan Cuti</li>
+              <li><img src="../images/clock-history.svgs" > Riwayat Cuti</li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown-toggle">GELAR</div>
+            <ul class="sub-menu">
+              <li><img src="../images/pencil-square.svg" > Permohonan Pencantuman Gelar</li>
+              <li><img src="../images/clock-history.svg" > Riwayat Pencantuman Gelar</li>
+            </ul>
+          </li>
+         
+          <li class="dropdown">
+            <div class="dropdown-toggle">PENSIUN</div>
+            <ul class="sub-menu">
+              <li><a href="../pensiun/inputpensiun.html" >
+              <li><img src="../images/pencil-square.svg" > Permohonan SK Pensiun</li></a></li>
+              <li><img src="../images/clock-history.svg" > Riwayat SK Pensiun</li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown-toggle">HUKDIS</div>
+            <ul class="sub-menu">
+              <li><a href="#" >
+              
+                <li><img src="../images/pencil-square.svg" > Permohonan Surat HUKDIS</li></a></li>
+              <li><img src="../images/clock-history.svg" > Riwayat Surat HUKDIS</li>
+            </ul>
+          </li>
+         
+      </aside>
+      <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+          toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const parent = toggle.closest('.dropdown');
+      
+            // Close others
+            document.querySelectorAll('.dropdown.open').forEach(drop => {
+              if (drop !== parent) drop.classList.remove('open');
+            });
+      
+            // Toggle current
+            parent.classList.toggle('open');
+          });
+        });
+      
+        // Hide all dropdowns when clicking outside
+        document.addEventListener('click', () => {
+          document.querySelectorAll('.dropdown.open').forEach(drop => {
+            drop.classList.remove('open');
+          });
+        });
+      </script>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>Permohonan Pensiun Pemberhentian</h1>
+      </header>
+
+      <div class="form-section">
+        <h2>Input Data Permohonan Pensiun</h2>
+        <div class="form-grid">
+          <!-- Each item below represents a form input and a file upload -->
+          <div class="form-group">
+            <label>Kartu Tanda Penduduk (KTP)</label>
+            <input type="file">
+          </div>
+          <div class="form-group">
+            <label>Surat Nikah & Kematian Suami/Istri Pertama</label>
+            <input type="file">
+          </div>
+          <div class="form-group">
+            <label>NPWP</label>
+            <input type="file">
+          </div>
+          <div class="form-group">
+            <label>Rangkaian Formulir Permohonan Pemberhentian</label>
+            <input type="file">
+          </div>
+          <div class="form-group">
+            <label>Kartu Keluarga (KK)</label>
+            <input type="file">
+          </div>
+          <div class="form-group">
+            <label>Surat Pengantar Kepada OPD</label>
+            <input type="file">
+          </div>
+          <div class="form-group">
+            <label>Buku Rekening</label>
+            <input type="file">
+          </div>
+          <div class="form-group">
+            <label>Surat Permohonan Pensiun</label>
+            <input type="file">
+          </div>
+          <!-- Add more groups as needed -->
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

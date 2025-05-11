@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Permohonan Pensiun</title>
+  <link rel="stylesheet" href="../css/eprofile.css"/>
+  <link rel="stylesheet" href="javascript/inputpensiun.js"/>
+  <link rel="stylesheet" href="../css/inputpensiun.css"/>
+
+
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo-center">
+        <a href="../../index.html" class="btn-zoom"><img src="../images/house-fill.svg" width="20px" class="zoom-hover"></a>
+      </div>
+
+
+      
+      
+        <div class="logo">E-Profile SIASN</div>
+    
+        <ul class="nav">
+          <li class="dropdown">
+            <div class="dropdown-toggle">PROFIL</div>
+            <ul class="sub-menu">
+              <li><a href="../profil/datadiri.html">
+              <li><img src="../images/person-fill.svg"> Data Diri</li></a></li> 
+              <li>Data Keluarga</li>
+              <li><img src="../images/mortarboard-fill.svg"> Riwayat Pendidikan</li>
+              <li>Riwayat Golongan</li>
+              <li><img src="../images/suitcase-lg-fill.svg"> Riwayat Jabatan</li>
+              <li>Riwayat Diklat/Kursus</li>
+              <li>Riwayat SKP</li>
+              <li><img src="../images/trophy-fill.svg"> Riwayat Penghargaan</li>
+            </ul>
+          </li>
+      
+          <li class="dropdown">
+            <div class="dropdown-toggle">KGB</div>
+            <ul class="sub-menu">
+              <li><img src="../images/pencil-square.svg"> Permohonan KGB</li>
+              <li><img src="../images/clock-history.svg"> Riwayat KGB</li>
+            </ul>
+          </li>
+      
+          <li class="dropdown">
+            <div class="dropdown-toggle">CUTI</div>
+            <ul class="sub-menu">
+              <li><img src="../images/pencil-square.svg" > Permohonan Cuti</li>
+              <li><img src="../images/clock-history.svg" > Riwayat Cuti</li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown-toggle">GELAR</div>
+            <ul class="sub-menu">
+              <li><img src="../images/pencil-square.svg" > Permohonan Pencantuman Gelar</li>
+              <li><img src="../images/clock-history.svg" > Riwayat Pencantuman Gelar</li>
+            </ul>
+          </li>
+         
+          <li class="dropdown">
+            <div class="dropdown-toggle">PENSIUN</div>
+            <ul class="sub-menu">
+              <li><a href="../pensiun/inputpensiun.html" >
+              <li><img src="../images/pencil-square.svg" > Permohonan SK Pensiun</li></a></li>
+              <li><img src="../images/clock-history.svg" > Riwayat SK Pensiun</li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown-toggle">HUKDIS</div>
+            <ul class="sub-menu">
+              <li><a href="#" >
+              
+                <li><img src="../images/pencil-square.svg" > Permohonan Surat HUKDIS</li></a></li>
+              <li><img src="../images/clock-history.svg" > Riwayat Surat HUKDIS</li>
+            </ul>
+          </li>
+         
+      </aside>
+      <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+          toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const parent = toggle.closest('.dropdown');
+      
+            // Close others
+            document.querySelectorAll('.dropdown.open').forEach(drop => {
+              if (drop !== parent) drop.classList.remove('open');
+            });
+      
+            // Toggle current
+            parent.classList.toggle('open');
+          });
+        });
+      
+        // Hide all dropdowns when clicking outside
+        document.addEventListener('click', () => {
+          document.querySelectorAll('.dropdown.open').forEach(drop => {
+            drop.classList.remove('open');
+          });
+        });
+      </script>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>DATA DIRI</h1>
+      </header>
+
+    
+          <!-- Add more groups as needed -->
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
