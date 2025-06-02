@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riwayat Pengajuan Gelar</title>
+  <link rel="stylesheet" href="../css/riwayatpensiun.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+          <img src="../images/logo.png" class="logo-img">
+          <span class="logo-text">Gaji Berkala</span>
+        </div>
+    <ul>
+        <li><a href="../kgb/homekgb.html">🏠 Dashboard</li></a>
+      <li><a href="../kgb/pengajuankgb.html">📄 Pengajuan</li></a>
+      <li class="active">📋 Riwayat</li>
+      <li><a href="../menu.html">🚪 Keluar</li></a>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>Riwayat Pengajuan Gelar</h1>
+
+    <div class="filters">
+      <div class="row">
+        <div class="container-dropdown">
+            <div class="form-group">
+              <label for="komponen">Komponen</label>
+              <select id="komponen" name="komponen">
+                <option value="">--Pilih Unit--</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="sub komponen">Sub Komponen</label>
+                <select id="sub komponen" name="sub komponen">
+                  <option value="">--Pilih Unit--</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="satuan kerja">Satuan Kerja</label>
+                <select id="satuan kerja" name="satuan kerja">
+                  <option value="">--Pilih Unit--</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sub bagian">Sub Bagian</label>
+                <select id="sub bagian" name="sub bagian">
+                  <option value="">--Pilih Unit--</option>
+                </select>
+              </div>
+          </div>
+     
+    </div>
+
+    <div class="filter-row">
+        <label>Periode</label>
+        <select>
+            <option>APRIL</option>
+            <option>MEI</option>
+            <option>JUNI</option>
+        </select>
+    
+        <label>sampai</label>
+        <select>
+            <option>MEI</option>
+            <option>JUNI</option>
+            <option>JULI</option>
+        </select>
+    
+        <select>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+        </select>
+    
+        <button class="btn tampil">
+            <span class="icon"></span>📄Tampil
+        </button>
+        <button class="btn refresh">
+            <span class="icon"></span> 🔄 Refresh
+        </button>
+    
+        <div class="search-box">
+            <label for="search">Cari</label>
+            <input type="text" id="search" placeholder="cari">
+        </div>
+    </div>
+    
+
+    <table>
+      <thead>
+        <tr>
+          <th>NIP ⬍</th>
+          <th>Nama ⬍</th>
+          <th>Email ⬍</th>
+          <th>No HP ⬍</th>
+          <th>Gol</th>
+          <th>Masa Kerja</th>
+          <th>Status ⬍</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>200001252001030021</td>
+          <td>Melati Amelia</td>
+          <td>melati@gmail.com</td>
+          <td>089122110981</td>
+          <td>III/b</td>
+          <td>5 Tahun</td>
+          <td>Pengecekan</td>
+          <td>
+            <button class="btn lihat">Cetak</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

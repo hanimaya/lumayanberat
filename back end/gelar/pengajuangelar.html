@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengajuan Gelar</title>
+  <link rel="stylesheet" href="../css/pengajuanpensiun.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+          <img src="../images/logo.png" class="logo-img">
+          <span class="logo-text">Gelar</span>
+        </div>
+    <ul>
+        <li><a href="../gelar/homegelar.html">🏠 Dashboard</li></a>
+      <li class="active">📄 Pengajuan</li>
+      <li><a href="../gelar/riwayatgelar.html">📋 Riwayat</li></a>
+      <li><a href="../menu.html">🚪 Keluar</li></a>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>Pengajuan</h1>
+
+    <div class="filters">
+      <div class="row">
+        <div class="container-dropdown">
+            <div class="form-group">
+              <label for="komponen">Komponen</label>
+              <select id="komponen" name="komponen">
+                <option value="">--Pilih Unit--</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="sub komponen">Sub Komponen</label>
+                <select id="sub komponen" name="sub komponen">
+                  <option value="">--Pilih Unit--</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="satuan kerja">Satuan Kerja</label>
+                <select id="satuan kerja" name="satuan kerja">
+                  <option value="">--Pilih Unit--</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sub bagian">Sub Bagian</label>
+                <select id="sub bagian" name="sub bagian">
+                  <option value="">--Pilih Unit--</option>
+                </select>
+              </div>
+               <button class="refresh-btn">🔄 Refresh</button>
+          </div>
+     
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>NIP ⬍</th>
+          <th>Nama ⬍</th>
+          <th>Email ⬍</th>
+          <th>No HP ⬍</th>
+          <th>Penambahan Gelar</th>
+          <th>Status ⬍</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>200001252001030021</td>
+          <td>Melati Amelia</td>
+          <td>melati@gmail.com</td>
+          <td>089122110981</td>
+          <td>S.Kom</td>
+          <td>Pengecekan</td>
+          <td>
+            <button class="btn lihat">Lihat</button>
+            <button class="btn terima">Terima</button>
+            <button class="btn tolak">Tolak</button>
+            <button class="btn hapus">Hapus</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

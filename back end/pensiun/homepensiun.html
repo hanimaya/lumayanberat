@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/homepensiun.css"/>
+  <script src="../javascript/chart.js"></script>
+  <title>PENSIUN</title>
+  <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="../images/logo.png" class="logo-img">
+      <span class="logo-text">Pensiun</span>
+    </div>
+    <ul>
+      <li class="active">🏠 Dashboard</li>
+      <li><a href="../pensiun/pengajuanpensiun.html">📄 Pengajuan</li></a>
+      <li><a href="../pensiun/riwayatpensiun.html">📋 Riwayat</li></a>
+      <li><a href="../menu.html">🚪 Keluar</li></a>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>Dashboard</h1>
+    <div class="cards">
+      <div class="card green">
+        <h3>👤 User</h3>
+        <p>251</p>
+      </div>
+      <div class="card green">
+        <h3>👜 Pengajuan</h3>
+        <p>251</p>
+      </div>
+      <div class="card green">
+        <h3>🗃️ Riwayat</h3>
+        <p>251</p>
+      </div>
+    </div>
+
+    <div class="charts">
+      <div>
+        <h3>Grafik Pengajuan Pensiun</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+      <div>
+        <h3>Grafik Prediksi Pensiun</h3>
+        <canvas id="donutChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="chart.js"></script>
+</body>
+</html>
