@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIKDA KAB. KARIMUN</title>
+  <link rel="stylesheet" href="../css/riwayatgelar.css"/>
+  <link rel="stylesheet" href="javascript/inputpensiun.js"/>
+
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo-center">
+        <a href="../../index.html" class="btn-zoom"><img src="../images/house-fill.svg" width="20px" class="zoom-hover"></a>
+      </div>
+
+
+      
+      
+        <div class="logo">GELAR</div>
+    
+        <ul class="nav">
+          <li class="dropdown">
+            <div class="dropdown-toggle">PROFIL</div>
+            <ul class="sub-menu">
+              <li><a href="../profil/datadiri.html">
+              <li><img src="../images/person-fill.svg"> Data Diri</li></a></li> 
+              <li>Data Keluarga</li>
+              <li><img src="../images/mortarboard-fill.svg"> Riwayat Pendidikan</li>
+              <li>Riwayat Golongan</li>
+              <li><img src="../images/suitcase-lg-fill.svg"> Riwayat Jabatan</li>
+              <li>Riwayat Diklat/Kursus</li>
+              <li>Riwayat SKP</li>
+              <li><img src="../images/trophy-fill.svg"> Riwayat Penghargaan</li>
+            </ul>
+          </li>
+      
+          <li class="dropdown">
+            <div class="dropdown-toggle">KGB</div>
+            <ul class="sub-menu">
+              <li><a href="../kgb/inputkgb.html">
+              <li><img src="../images/pencil-square.svg"> Permohonan KGB</li></a></li>
+                 <li><a href="../kgb/riwayatkgb.html">
+              <li><img src="../images/clock-history.svg"> Riwayat KGB</li></a></li>
+            </ul>
+          </li>
+      
+          <li class="dropdown">
+            <div class="dropdown-toggle">CUTI</div>
+            <ul class="sub-menu">
+              <li><img src="../images/pencil-square.svg" > Permohonan Cuti</li>
+              <li><img src="../images/clock-history.svg" > Riwayat Cuti</li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown-toggle">GELAR</div>
+            <ul class="sub-menu">
+              <li><a href="../gelar/inputgelar.html">
+                <li><img src="../images/pencil-square.svg" > Permohonan Pencantuman Gelar</li></a></li>
+                <li><a href="../gelar/riwayatgelar.html">
+                <li><img src="../images/clock-history.svg" > Riwayat Pencantuman Gelar</li></a></li>
+            </ul>
+          </li>
+         
+          <li class="dropdown">
+            <div class="dropdown-toggle">PENSIUN</div>
+            <ul class="sub-menu">
+              <li><a href="../pensiun/inputpensiun.html" >
+              <li><img src="../images/pencil-square.svg" > Permohonan SK Pensiun</li></a></li>
+              <li><a href="../pensiun/riwayatpensiun.html">
+              <li><img src="../images/clock-history.svg" > Riwayat SK Pensiun</li></a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <div class="dropdown-toggle">HUKDIS & PROSPID</div>
+            <ul class="sub-menu">
+              <li><a href="#" >
+              
+                <li><img src="../images/pencil-square.svg" > Permohonan Super HUKDIS & PROSPID</li></a></li>
+              <li><img src="../images/clock-history.svg" > Riwayat Super HUKDIS & PROSSPID</li>
+            </ul>
+          </li>
+         
+      </aside>
+      <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+          toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const parent = toggle.closest('.dropdown');
+      
+            // Close others
+            document.querySelectorAll('.dropdown.open').forEach(drop => {
+              if (drop !== parent) drop.classList.remove('open');
+            });
+      
+            // Toggle current
+            parent.classList.toggle('open');
+          });
+        });
+      
+        // Hide all dropdowns when clicking outside
+        document.addEventListener('click', () => {
+          document.querySelectorAll('.dropdown.open').forEach(drop => {
+            drop.classList.remove('open');
+          });
+        });
+      </script>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Permohonan Pencantuman Gelar</h1>
+        <div class="actions">
+          <button class="refresh">🔄 Refresh</button>
+          <button class="submit"><a href="../kgb/inputkgb.html">+ Buat Permohonan</a></button>
+        </div>
+      </header>
+
+      <section class="steps">
+        <div class="step active">📄<br>Baru</div>
+        <div class="step">🔄<br>Proses</div>
+        <div class="step">✅<br>Approval</div>
+        <div class="step">⚙️<br>Selesai</div>
+      </section>
+
+      <section class="content-box">
+        <div class="empty">
+          <div class="icon">📄</div>
+          <p>Belum ada permohonan pencantuman gelar</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

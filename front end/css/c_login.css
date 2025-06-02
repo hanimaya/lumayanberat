@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+  }
+  
+  .background {
+    background: url('../images/karimun.png') no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+    
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+  }
+  
+  .logo img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .container h2 {
+    margin-bottom: 5px;
+  }
+  
+  .container p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .switch-tab {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .switch-tab button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    background: #f0f0f0;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  .switch-tab .active {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .forgot {
+    text-align: right;
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  
+  .forgot a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .register-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .register-text a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+}

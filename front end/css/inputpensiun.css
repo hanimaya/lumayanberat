@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background: #e3f5dd;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+  
+  .nav {
+    list-style: none;
+  }
+  
+  .nav .sub-menu {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+ 
+
+  .nav li {
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .nav li.active,
+  .nav li:hover {
+    background: #c8e6c9;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .top  {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .form-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .form-group {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  .form-group input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+    color: inherit;
+    text-decoration: none;
+    color: #4a148c;           
+    
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+  
+  .dropdown.open .sub-menu {
+    display: block;
+    color: inherit;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+    padding: 10px 0;
+    color: #2e7d32;
+  }
+  
+  .dropdown-toggle:hover {
+    font-weight: bold;
+    color: inherit;
+  }
+  
+  .logo-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px; /* spacing between logo and button */
+    padding-top: 2px;
+    padding-bottom: 5px;
+  }
+  
+  .zoom-hover,
+  .btn-zoom {
+    transition: transform 0.3s ease;
+  }
+  
+  .zoom-hover:hover,
+  .btn-zoom:hover {
+    transform: scale(1.2);
+  }
+  
+  .btn-zoom {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-zoom:hover {
+    background-color: transparent;
+  }
+  
+  
+  
